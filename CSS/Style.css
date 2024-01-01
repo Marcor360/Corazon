@@ -1,0 +1,66 @@
+    body {
+        margin: 0;
+        padding: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #0b1522;
+    }
+
+    .corazon {
+        width: 150px;
+        height: 150px;
+        background-color: red;
+        position: relative;
+        transform: rotate(45deg);
+        box-shadow: -20px 20px 150px #f2004f;
+        animation: palpitar 0.5s linear infinite alternate;
+    }
+
+    .Texto {
+        position: fixed;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .Mensaje {
+        font-family: Lobster;
+        color: white;
+    }
+
+    @keyframes palpitar {
+        0% {
+            transform: rotate(45deg) scale(1.10);
+        }
+
+        85% {
+            transform: rotate(45deg) scale(1.0);
+        }
+
+        100% {
+            transform: rotate(45deg) scale(0.8);
+        }
+    }
+
+    .corazon::before {
+        content: "";
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        background: red;
+        right: 50%;
+        border-radius: 50%;
+        box-shadow: 20px 20px 150px #f2004f;
+    }
+
+    .corazon::after {
+        content: "";
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        background: red;
+        top: -50%;
+        border-radius: 50%;
+        box-shadow: 20px 20px 150px #f2004f;
+    }
