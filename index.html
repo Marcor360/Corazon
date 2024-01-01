@@ -11,14 +11,19 @@
     <title>Tania Daray</title>
 </head>
 
-<body>
+<body onclick="PlayAudio()">
     <div class="corazon"></div>
     <div class="Texto">
         <h1 class="Mensaje">Te Amo Tania...</h1>
     </div>
-    <audio class="Audio" autoplay controls loop>
+    <audio id="Aud" class="Audio" loop>
         <source src="./Audio/Enamorado tuyo.mp3" type="audio/mpeg">
     </audio>
 </body>
+<script>
+    function PlayAudio() {
+        document.getElementById("Aud").play();
+    }
+</script>
 
 </html>
