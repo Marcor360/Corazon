@@ -73,3 +73,23 @@
         margin-bottom: 50px;
         text-align: center;
     }
+
+    .Cont {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .Boton {
+        background-color: transparent;
+        border-color: transparent;
+    }
+
+    .Boton:hover {
+        border-color: #ffffff;
+        transition: border-color .1s ease;
+    }
+
+    a {
+        text-decoration: none;
+    }
